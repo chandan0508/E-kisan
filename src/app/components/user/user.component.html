@@ -1,0 +1,31 @@
+<h5 class="text-center">Login</h5>
+
+
+<div class="row justify-content-center">
+
+    <div class="col-md-3 col-md-offset-3">
+
+    
+      <div class="form-group">
+     <label>Enter Email:</label>   
+     <input type="text" #email class="form-control" required>
+    
+     <label>Enter Password:</label>
+     <input type="password" #password class="form-control" required><br>
+     
+    
+      <div class="row justify-content-center">
+     <button (click)="validate(email.value,password.value)" class="btn btn-primary center-block">Login</button>
+     </div>
+
+     <label class="register">If you are not registerd yet, please resgister</label>
+     <a routerLink="../register">here</a><br>
+     <p class="text-center">{{message}}</p>
+
+   <div>
+    </div>
+    </div>
+  
+   
+  
+    

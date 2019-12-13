@@ -1,0 +1,43 @@
+<p>All users!</p>
+
+<div>
+    <table class="table table-hover">
+        <thead>
+            <tr>
+            <th>ID</th>
+            <th>profile</th>
+            <th>first Name</th>
+            <th>Last Name</th>
+            <th>Email</th>
+            <th>Password</th>
+            <th>Mobile number</th>
+            <th>Addhar Number</th>
+            <th>Dob</th>
+            <th>City</th>
+            <th>State</th>
+            <th>Action</th>
+            </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let u of users">
+                    <td>{{u.id}}</td>
+                    <td>
+                            <img src="{{u.profile}}" height="100px" width="150px" class="img">
+                        </td>
+                    <td>{{u.fname}}</td>
+                    <td>{{u.lname}}</td>
+                    <td>{{u.email}}</td>
+                    <td>{{u.password}}</td>
+                    <td>{{u.mobileno}}</td>
+                    <td>{{u.adharno}}</td>
+                    <td>{{u.dob}}</td>
+                    <td>{{u.city}}</td>
+                    <td>{{u.state}}</td>
+                    
+                    <td>
+                        <button (click)="delete(u.id)">Delete</button>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>

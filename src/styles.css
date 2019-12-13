@@ -1,0 +1,15 @@
+.login {
+    padding: 7px 138px;  
+    font-size: 15px;
+}
+.wid{
+    width: 200px;
+    height: 260px;
+}
+.mar{
+    margin-left: 10%;
+    margin-right: 10%;
+}
+.car{
+    background-color: rgb(183, 231, 183);
+}

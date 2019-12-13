@@ -1,0 +1,46 @@
+
+
+<div class="row justify-content-center">
+<div class="col-md-3 col-md-offset-3">
+<form #myform="ngForm" (ngSubmit)="register(myform.value)">
+        
+         <h5 class="text-center">Register Here</h5>
+        <div class="form-group">
+        <label for="fname">Enter first Name:</label>
+        <input type="text" ngModel #fname name="fname" class="form-control">
+        
+
+        <label>Enter Last Name:</label>
+        <input type="text" ngModel #lname name="lname" class="form-control">
+        
+        <label>Enter Email:</label>
+        <input type="text" ngModel #email name="email" class="form-control">
+        
+        <label>Enter password:</label>
+        <input type="password" ngModel #password name="password" class="form-control">
+        
+        <label>Enter mobile number :</label>
+        <input type="text" ngModel #mobno name="mobileno" class="form-control">
+        
+        <label>Enter dob:</label>
+        <input type="date" ngModel #dob name="dob" class="form-control">
+        
+        <label>Enter adhar number:</label>
+        <input type="text" ngModel #adhar name="adharno" class="form-control">
+        
+        <label>Enter city:</label>
+        <input type="text" ngModel #city name="city" class="form-control">
+        
+        <label>Enter State:</label>
+        <input type="text" ngModel #state name="state" class="form-control">
+
+        <label>Enter Profile:</label>
+        <input type="file" ngModel #state name="profile" class="form-control"><br>
+        
+        <button class="btn btn-success">Register</button>
+        <p>{{message}}</p>
+        </div>
+        </form>
+
+</div>
+</div>

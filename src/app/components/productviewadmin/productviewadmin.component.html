@@ -1,0 +1,33 @@
+<p>productviewadmin works!</p>
+<router-outlet></router-outlet>
+<div>
+    <table class="table table-hover">
+        <thead>
+            <tr>
+            <th>ID</th>
+          
+            <th>Name</th>
+            <th>Information</th>
+            <th>Price/kg</th>
+            <th>Action</th>
+            <th>Action</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let p of products">
+            <td>{{p.id}}</td>
+            <td>{{p.name}}</td>
+            <th>{{p.information}}</th>
+            <td>{{p.price}}</td>
+            <td>
+                <button (click)="Deleteproduct(p.id)">Delete</button></td>
+                <td><button (click)="update(p.id)">Update</button>
+            </td>
+        </tr>
+    </tbody>
+</table>
+</div>
+    
+                 
+            
+ 

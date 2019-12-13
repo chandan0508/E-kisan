@@ -1,0 +1,49 @@
+body{
+  margin-top: 30%;
+}
+
+h1{
+  color: green;
+}
+
+h5{
+  margin-top: 20%;
+}
+
+ul {
+   
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: rgb(95, 92, 92);
+  }
+  
+  li {
+    float: right;
+  }
+  
+  li a {
+    display: block;
+    color: rgb(62, 233, 56);
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  li a:hover {
+    background-color: #111;
+  }
+
+  marquee{
+   
+    font-size: 150%;
+  }
+
+a{
+  display: block; 
+  float: right;
+  margin-right:7%;
+}
+ 
+

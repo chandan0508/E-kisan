@@ -1,0 +1,23 @@
+<p>category works!</p>
+
+
+<div class="row justify-content-center">
+<div class="col-md-3 col-md-offset-3">
+        <p> Add Category</p>
+<form #myform="ngForm" (ngSubmit)="AddProduct(myform.value)">
+    
+    <label>Enter Name:</label>
+    <input type="text"  ngModel #name name="name" class="form-control">
+
+    <label>Enter Price/kg:</label>
+    <input type="text"  ngModel #price name="price" class="form-control">
+
+    <label>Enter Information:</label>
+    <input type="text"  ngModel #information name="information" class="form-control">
+
+    <button class="btn btn-success">Add Product</button>
+    <p>{{message}}</p>
+    </form>
+    </div>
+    </div>
+
